@@ -4,7 +4,7 @@
  */
 import h from './helpers.js';
 
-const wsUrl = 'ws://localhost:3000';
+const wsUrl = 'ws://gdit-sersys-stream.herokuapp.com';
 var servers = {
     iceServers: []
 }
