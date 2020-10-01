@@ -4,7 +4,7 @@
  */
 import h from './helpers.js';
 
-const wsUrl = 'ws://localhost:8080';
+const wsUrl = 'ws://localhost:3000';
 var servers = {
     iceServers: []
 }

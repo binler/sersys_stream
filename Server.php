@@ -27,13 +27,13 @@ class Server
         curl_setopt_array($curl, [
             CURLOPT_HTTPHEADER => ["Content-Type: application/json", "Content-Length: " . strlen($json_data)],
             CURLOPT_POSTFIELDS => $json_data,
-            CURLOPT_URL => "https://global.xirsys.net/_turn/YOUR-CHANNEL-NAME",//Replace 'YOUR-CHANNEL-NAME' with the name of your xirsys channel
-            CURLOPT_USERPWD => "YOUR PASSWORD",
+            CURLOPT_URL => "https://global.xirsys.net/_turn/gdit-webchat",//Replace 'YOUR-CHANNEL-NAME' with the name of your xirsys channel
+            CURLOPT_USERPWD => "binlerdev:77b121c6-039f-11eb-be1c-0242ac150002",
             CURLOPT_HTTPAUTH => CURLAUTH_BASIC,
             CURLOPT_CUSTOMREQUEST => "PUT",
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_SSL_VERIFYHOST => 2,
-            CURLOPT_SSL_VERIFYPEER => TRUE
+            // CURLOPT_SSL_VERIFYHOST => 2,
+            // CURLOPT_SSL_VERIFYPEER => TRUE
         ]);
 
         $res = curl_exec($curl);
